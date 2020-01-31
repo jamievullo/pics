@@ -21,3 +21,7 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+unsplash api keys
+access key = 5da4a1b30280f8b9ac9cb1eb2024a0447834e06d8a5afcd0882673004ff03783
+secret key = c25dc0f1ed830a7520b70ca074d75e234448353667af263201f01bf159aaa24a
