@@ -9,9 +9,9 @@ class ImageCard extends React.Component {
     }
 
     componentDidMount() {
-        //had to set event listener 'load' because we were trying to get heights of images before they
-        //loaded. Event listener has callback function setSpans which is bound to this, so
-        //setSpans needs to take on arrow syntax
+        // had to set event listener 'load' because  trying to get heights of images before they
+        // loaded. Event listener has callback function setSpans which is bound to this, so
+        // setSpans needs to take on arrow syntax
         this.imageRef.current.addEventListener('load', this.setSpans)
         // console.log(this.imageRef)
         // console.log(this.imageRef.current.height)
@@ -20,13 +20,13 @@ class ImageCard extends React.Component {
     setSpans = () => {
         // console.log(this.imageRef.current.height)
         const height = this.imageRef.current.height
-        //makes span height from css divided by actual image height
+        // makes span height from css divided by actual image height
         const spans = Math.ceil(height / 10)
         this.setState({spans: spans})
     }
 
     render() {
-        //destructuring
+        // destructuring
         const {description, urls} = this.props.image
         return (
             <div style={{gridRowEnd: `span ${this.state.spans}`}}>
